@@ -569,9 +569,27 @@ html {
   line-height: 1.88;
   color: var(--text-color);
 }
+.works-list-item-wraper {
+  position: relative;
+}
+.works-list-item-wraper::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+}
 .works-list-item-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
